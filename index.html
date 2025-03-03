@@ -2,13 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="src/style.scss">
+    <script defer type="module" src="/src/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.0/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.0/cdn/shoelace-autoloader.js"></script>
+    <title>Todo</title>
   </head>
   <body>
-    <div id="app"></div>
-    <Input/>
-    <script type="module" src="/src/main.js"></script>
+    <div id="app">
+      <p class="title">Todo</p>
+      <div class="input-todo-wrapper">
+        <sl-input class="input-todo" placeholder="Add or find todo"></sl-input>
+        <sl-button>Add</sl-button>
+      </div>
+
+      <section class="container">
+        <article class="todo">
+          <span>Some text</span>
+          <sl-button>Remove</sl-button>
+        </article>
+      </section>
+    </div>
   </body>
 </html>

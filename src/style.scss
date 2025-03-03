@@ -1,0 +1,40 @@
+* {
+  font-family: "Arial";
+  box-sizing: border-box;
+}
+
+#app {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.input-todo-wrapper {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.input-todo {
+  flex-grow: 1;
+}
+
+.container {
+  display: flex;
+  gap: 8px;
+}
+
+.todo {
+  border: 1px solid #bdb8b8;
+  border-radius: 5px;
+  padding: 6px 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
